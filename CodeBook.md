@@ -97,7 +97,7 @@ For details on the variable names for signals see the description from the origi
 ```
  
 ##summary_sig.txt
-In the str() output below value is the mean of the variable.
+The mean value for each variable, by Activity and subject.
 
 ###str()
 ```
@@ -105,7 +105,7 @@ In the str() output below value is the mean of the variable.
  $ Subject : int  20 24 27 28 29 30 12 13 17 18 ...
  $ Activity: Factor w/ 6 levels "LAYING","SITTING",..: 1 1 1 1 1 1 2 2 2 2 ...
  $ variable: Factor w/ 66 levels "fBodyAcc-mean()-X",..: 27 27 27 27 27 27 27 27 27 27 ...
- $ value   : num  0.268 0.277 0.278 0.278 0.279 ...
+ $ mean   : num  0.268 0.277 0.278 0.278 0.279 ...
 ```
 
 #Signal descriptions from the original study

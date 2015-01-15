@@ -74,7 +74,9 @@ run_analysis <- function()
   
   # creates a second, independent tidy data set with the average of each variable 
   # for each activity and each subject.
-  summary_sig <- melt(aggregate(. ~ Subject + Activity,data=t,FUN=mean),id.vars=c("Subject","Activity"))
+  #summary_sig <- aggregate(. ~ Subject + Activity,data=total_sig,FUN=mean)
+  summary_sig <- melt(  aggregate(. ~ Subject + Activity,data=total_sig,FUN=mean)  ,id.vars=c("Subject","Activity"))
+  colnames(summary_sig)[[4]] <- "mean"
   
   #  write.table() using row.name=FALSE
   print("Saving summary_sig.txt file ...")
